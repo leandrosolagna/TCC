@@ -1,6 +1,6 @@
 \chapter{REVISÃO BIBLIOGRÁFICA}\label{ch:rev-bibs}
 
-O inicio das redes de computadores aconteceu nos Estados Unidos, onde pesquisadores do DARPA (\textit{Defense Advanced Research Projects Agency}) começaram a experimentar comunicações entre computadores com o objetivo de conectar os departamentos de pesquisas com as bases miliares Americanas. Mas, como os estados unidos estavam plena guerra fria e toda comunicação das redes passavam por um computador central que se encontravam no Pentágono sua comunicação era extremamente vulnerável. Bastava apenas a antiga URSS atacar o Pentágono que toda a conexão Americana era afetada(Refe: <http://www.inf.furb.br/~pericas/orientacoes/EstudoIPv62006.pdf>)
+O inicio das redes de computadores aconteceu nos Estados Unidos, onde pesquisadores do DARPA (\textit{Defense Advanced Research Projects Agency}) começaram a experimentar comunicações entre computadores com o objetivo de conectar os departamentos de pesquisas com as bases miliares Americanas. Mas, como os estados unidos estavam plena guerra fria e toda comunicação das redes passavam por um computador central que se encontravam no Pentágono sua comunicação era extremamente vulnerável. Bastava apenas a antiga URSS atacar o Pentágono que toda a conexão Americana era afetada \cite{furb-ipv6}.
 
 E com isso surgiu a ARPANET (\textit{Advanced Research Projects Agency Network}), com um Back Bone por baixo da terra que ligava os militares aos pesquisadores, tendo como primeiro nó a UCLA e o segundo nó a SRI, onde receberam a primeira mensagem de nó-a-nó \cite{comeco-internet}.
 
@@ -20,13 +20,11 @@ Responsável por identificar hospedeiros onde providencia um endereço único pa
 
 Com suporte a três tipos diferentes de modos de endereçamento, da qual se chamam \textit{unicast}, \textit{broadcast} e \textit{multicast}.
 
-<<<<<<< HEAD
-O protocolo divide cada endereço em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede. Um endereço de IP é um número de 32 \textit{bits}. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hospedeiros era atribuído o valor de prefixo B. As redes menores era atribuído um valor prefixo de classe C, e as redes maiores era atribuído o prefixo de classe A. (Refe: Livro do joão, usado nas aulas de redes)
-=======
-O protocolo divide cada endereço em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede. 
->>>>>>> c27b5094154337ec47832a3f9dff961d1ca9bb2b
+O protocolo divide cada endereço em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede. Um endereço de IP é um número de 32 \textit{bits}. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hospedeiros era atribuído o valor de prefixo B. As redes menores era atribuído um valor prefixo de classe C, e as redes maiores era atribuído o prefixo de classe A. %(Refe: Livro do joão, usado nas aulas de redes)
 
-Um endereço de IP é um número de 32 bits. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hospedeiros era atribuído o valor de prefixo B. As redes menores era atribuído um valor prefixo de classe C, e as redes maiores era atribuído o prefixo de classe A. (Refe: Livro do joão, usado nas aulas de redes)
+O protocolo divide cada endereço em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede.
+
+Um endereço de IP é um número de 32 \textit{bits}. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hospedeiros era atribuído o valor de prefixo B. As redes menores era atribuído um valor prefixo de classe C, e as redes maiores era atribuído o prefixo de classe A. %(Refe: Livro do joão, usado nas aulas de redes)
 
 Apesar disso, existem endereços reservados para uso pessoal. Toda a classe de IP's possui endereços reservados que podem ser utilizados em uma rede local, por exemplo, em empresas e em casas. Esses endereços podem ser chamados de IPv4 inválidos, pois não são roteáveis na Internet.
 
@@ -36,20 +34,17 @@ Para receber um endereço IP, o computador procura um servidor DHCP, se houver u
 
 A alocação de IPv4 é globalmente gerenciada pela IANA (\textit{Internet Assigned Numbers Authority}) em coordenação com a ICANN (\textit{Internet Corporation for Assigned Names and Numbers}). A IANA trabalha junto com os cincos RIRs (Registro Regional da Internet) existentes das quais são orgões que gerenciam a distribuição de IPv4 e IPv6. Na américa latina o orgão responsável por entrega de endereços IPv4 válidos é a LACNIC (Registro de Endereçamento da Internet para América Latina e Caribe).
 
-<<<<<<< HEAD
 Como mencionado anteriormente, os endereços dessa versão estavam próximos de esgotarem e se isso ocorresse, a rede mundial teria vários problemas, mesmo com tecnologias surgindo para evitar que isso ocorra, por exemplo NAT. Por essa razão, pesquisas para desenvolver um novo protocolo começaram a ser realizadas, o que fez que surgisse o IPv6 para evitar o esgotamento de IP's espalhados pelo mundo.
 
-\section{As diferenças entre os protocolos}\label{sec:protIPv6}
+%\section{As diferenças entre os protocolos}\label{sec:protIPv6}
 
-A principal diferença entre os dois protocolos é o número de bits que mude de apenas 32 \textit{bits} para 128 \textit{bits}, permitindo assim uma mudança radical na atribuição e gerenciamento de endereços IP \cite{}.
+%A principal diferença entre os dois protocolos é o número de bits que mude de apenas 32 \textit{bits} para 128 \textit{bits}, permitindo assim uma mudança radical na atribuição e gerenciamento de endereços IP \cite{livro-ipv6}.
 
-Além da diferença principal, houve uma grande 
-=======
+%Além da diferença principal, houve uma grande
 \section{IPv6}\label{sec:protIPv6}
 
-Com a explosão da internet e com o constante surgimento de tecnologias, aplicações, serviços e dispositivos conectados a rede, os endereços atuais de IPv4 se tornariam escassos. 
+Com a explosão da internet e com o constante surgimento de tecnologias, aplicações, serviços e dispositivos conectados a rede, os endereços atuais de IPv4 se tornariam escassos.
 
-Citar - "Foi quando em Junho de 1994, a comissão do IPng (Internet Protocol next generation) revisou todas as propostas e publicou sua recomendação. Sugeriu o SIPP como a base para o novo protocolo IP. O novo protocolo teria endereços de 128 bits e se chamaria IPv6. O número 5 havia sido alocado ao protocolo ST (stream), um protocolo experimental para suportar serviços em tempo real em paralelo com o IP. (NUNES, 2006, internet)."
+Foi quando em Junho de 1994, a comissão do IPng (\textit{Internet Protocol next generation}) revisou todas as propostas e publicou sua recomendação. O IPv5 5 havia sido alocado ao protocolo ST (\textit{Internet Stream Protocol}), um protocolo experimental para suportar serviços em tempo real em paralelo com o IP \cite{pucrs-ipv6}. Após esses experimentos sugeriu o SIPP (\textit{Simple Internet Protocol Plus}) como a base para o novo protocolo IP. O novo protocolo teria endereços de 128 \textit{bits} e se chamaria IPv6.
 
-O novo protocolo atendia as necessidades das empresas em questão de redes com arquiteturas mais escaláveis, com maior segurança e integridade de dados 
->>>>>>> c27b5094154337ec47832a3f9dff961d1ca9bb2b
+O novo protocolo atendia as necessidades das empresas em questão de redes com arquiteturas mais escaláveis, com maior segurança e integridade de dados
