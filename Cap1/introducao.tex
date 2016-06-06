@@ -2,16 +2,16 @@
 
 O crescimento contínuo e global da Internet é um dos fenômenos mais interessantes e excitantes em redes. Há algumas décadas, não se imaginava que um projeto de pesquisa envolvendo duas universidades da Califórnia – UCLA (Universidade da Califórnia, Los Angeles) e SRI (Instituto de Pesquisa Stanford), se tornaria o principal meio de comunicação no dia a dia das pessoas.
 
-Para que essa comunicação aconteça, protocolos que ditam as regras de conexão, entre uma origem e destino, foram criados. Ou seja, possibilitando assim a comunicação entre pessoas ou máquinas, não importando a sua localização global. Entre vários protocolos que foram criados, o mais importante foi, o IP (Protocolo de Internet). O IP é responsável por dar um endereço único para cada dispositivo conectado em uma rede de computadores, permitindo assim, que as informações cheguem ao seu destino. citar: http://www.infowester.com/ip.php
+Para que essa comunicação aconteça, protocolos que ditam as regras de conexão, entre uma origem e destino, foram criados. Ou seja, possibilitando assim a comunicação entre pessoas ou máquinas, não importando a sua localização global. Entre vários protocolos que foram criados, o mais importante foi, o IP (Protocolo de Internet). O IP é responsável por dar um endereço único para cada dispositivo conectado em uma rede de computadores, permitindo assim, que as informações cheguem ao seu destino \cite{ip}. 
 
-A partir de 1983, a Internet começou a usar o IP versão 4 (IPv4). Isto fez com que a rede mundial de computadores crescesse em um ritmo acelerado, com vários equipamentos sendo criados e necessitando de um endereço único para funcionar normalmente. Por causa disso, cientistas e especialistas perceberam no final da década de 80, que os números de IPv4 estavam próximos de esgotarem. citar: http://ipv6.br/post/ipv6-um-desafio-tecnico-para-a-internet/
+A partir de 1983, a Internet começou a usar o IP versão 4 (IPv4). Isto fez com que a rede mundial de computadores crescesse em um ritmo acelerado, com vários equipamentos sendo criados e necessitando de um endereço único para funcionar normalmente. Por causa disso, cientistas e especialistas perceberam no final da década de 80, que os números de IPv4 estavam próximos de esgotarem \cite{desafio-ipv6}.
 
 Dessa forma, começaram pesquisas para se encontrar uma solução adequada para esse problema. Nos anos 90, solução como o CIDR (Roteamento Intra Domínio Sem Classe) foi proposto, com o intuito de usar os endereços IPs de forma mais eficiente. Em tempos mais recentes, começo dos anos 2000, o NAT (Tradução de Endereço de Rede) foi proposto, mascarando IPs inválidos para que os usuários possam acessar a nuvem. Obviamente, essas soluções só foram propostas como temporárias, o grande problema ainda existia, o limite de endereços IPv4.
-A solução proposta foi a atualização do protocolo, usado na época, para um outro que pudesse gerar mais endereços únicos. Foi então desenvolvido o IP versão 6 (IPv6). Nessa versão, a característica principal foi o aumento de número de endereços, passando de 4 bilhões para mais de 340 undecilhões. citar: http://ipv6.br/post/enderecamento/
+A solução proposta foi a atualização do protocolo, usado na época, para um outro que pudesse gerar mais endereços únicos. Foi então desenvolvido o IP versão 6 (IPv6). Nessa versão, a característica principal foi o aumento de número de endereços, passando de 4 bilhões para mais de 340 undecilhões \cite{tamanho-ipv6}.
 
 Os cientistas aproveitaram essa oportunidade para mudar outras características do protocolo, algumas dessas foi a alteração do cabeçalho para um menos complexo de se entender, protocolos que auxiliam o IPv6 no seu funcionamento, ICMP (Protocolo de Controle de Mensagem da Internet), DHCP (Protocolo de Configuração Dinâmica de Host) e IPSec (Protocolo de Segurança) também foram modificados.
 
-Assim como na versão anterior, o IPv6 usa o protocolo de controle de mensagens da Internet ICMP, que tem como responsabilidade enviar mensagens de erro indicando que o serviço, roteador ou um endereço de rede está indisponível. No IPv6, além de reportar erros no processamento de pacotes, realizar diagnósticos e enviar mensagens sobre as características da rede, o protocolo ICMPv6 assumiu também funcionalidades dos protocolos ARP (Protocolo de Resolução de Endereço), RARP (Protocolo de Resolução Reversa de Endereços) e IGMP (Protocolo Gerenciamento de Grupos da Internet). citar: http://www.teleco.com.br/tutoriais/tutorialredeipmig1/pagina_2.asp
+Assim como na versão anterior, o IPv6 usa o protocolo de controle de mensagens da Internet ICMP, que tem como responsabilidade enviar mensagens de erro indicando que o serviço, roteador ou um endereço de rede está indisponível. No IPv6, além de reportar erros no processamento de pacotes, realizar diagnósticos e enviar mensagens sobre as características da rede, o protocolo ICMPv6 assumiu também funcionalidades dos protocolos ARP (Protocolo de Resolução de Endereço), RARP (Protocolo de Resolução Reversa de Endereços) e IGMP (Protocolo Gerenciamento de Grupos da Internet) \cite{teleco}. 
 
 Os protocolos ARP e RARP, em geral, são utilizados para encontrar um endereço único em um dispositivo em uma rede. O protocolo IGMP tem como função controlar os membros de um grupo de \textit{multicast}.
 
@@ -24,13 +24,13 @@ Com o ICMPv6 (Protocolo de Controle de Mensagem da Internet versão 6), várias 
 \item NA (\textit{Neighbor Advertisement}): São respostas à mensagens NS ou para informar a mudança de endereço de uma máquina.
 \end{itemize}
 
-Com o protocolo ICMP atualizado, um novo protocolo dependente do ICMP foi criado, o NDP(Protocolo Descoberta de Vizinhança). O NDP do ICMPv6 permite saber quais são as máquinas da rede, encontrar roteadores vizinhos, detectar endereços duplicados e detectar outras anomalias que possam acontecer dentro de uma rede de computadores. citar: https://tools.ietf.org/html/rfc4861
+Com o protocolo ICMP atualizado, um novo protocolo dependente do ICMP foi criado, o NDP(Protocolo Descoberta de Vizinhança). O NDP do ICMPv6 permite saber quais são as máquinas da rede, encontrar roteadores vizinhos, detectar endereços duplicados e detectar outras anomalias que possam acontecer dentro de uma rede de computadores \cite{rfc4861}.
 
-O protocolo IPv6 ainda é considerado um protocolo novo, por isso, suas vulnerabilidades ainda não foram exploradas ao máximo. citar: https://securityintelligence.com/the-importance-of-ipv6-and-the-internet-of-things/
+O protocolo IPv6 ainda é considerado um protocolo novo, por isso, suas vulnerabilidades ainda não foram exploradas ao máximo \cite{internet-of-things}. 
 
 Assim como no seu antecessor (IPv4), o IPv6 possui vulnerabilidades que podem ser exploradas através de ataque como \textit{man-in-the-middle}, cujo objetivo é o roubo de informações ou ataques que possam negar algum serviço, fazendo com que o usuário da rede não consiga utilizá-la.
 
-Para fornecer segurança contra ataques que possam se passar por uma máquina ou um dispositivo da rede foi criado uma extensão do protocolo NDP, chamado de SEND (\textit{SEcure Neighbor Discovery}). Este protocolo propõe solução aos seguintes itens: citar: https://tools.ietf.org/html/rfc3971
+Para fornecer segurança contra ataques que possam se passar por uma máquina ou um dispositivo da rede foi criado uma extensão do protocolo NDP, chamado de SEND (\textit{SEcure Neighbor Discovery}). Este protocolo propõe solução aos seguintes itens \cite{rfcSEND}: 
 
 \begin{itemize}
 \item Criação de uma cadeia de certificados;
@@ -39,13 +39,13 @@ Para fornecer segurança contra ataques que possam se passar por uma máquina ou
 \item Prevenir ataques de reenvio de mensagens por meio de duas novas opções no NDP;
 \end{itemize}
 
-Quando se usa o IPv6, sem o apoio do SEND em todos os dispositivos da rede, há sempre o risco de lidar com problemas que envolvem o envio indevido dos RA, que são mensagens enviadas por roteadores em resposta às mensagens de requisitos ou RS, por roteadores não autorizados ou indevidamente configurados na rede. citar: http://www.teleco.com.br/tutoriais/tutorialredeipmig1/pagina_2.asp
+Quando se usa o IPv6, sem o apoio do SEND em todos os dispositivos da rede, há sempre o risco de lidar com problemas que envolvem o envio indevido dos RA, que são mensagens enviadas por roteadores em resposta às mensagens de requisitos ou RS, por roteadores não autorizados ou indevidamente configurados na rede \cite{teleco}.
 
 Uma alternativa para esse problema é o protocolo RA Guard (\textit{Router Advertisement Guard}), que surgiu devido à dificuldade de implementação do SEND.
 
 O IPv6 RA Guard monitora mensagens de RA originadas de um roteador não autorizado. Esse protocolo analisa as RA e filtra as mensagens de dispositivos não autorizados, através de uma tabela, que possui as informações dos roteadores autorizados na rede. citar: https://tools.ietf.org/html/rfc6105
 
-Essa técnica é usada para ajudar o administrador a identificar ataques como \textit{man-in-the-middle}, um roteador da rede que não está autorizado e negação de serviço por configuração inválida. https://community.infoblox.com/t5/IPv6-Center-of-Excellence/Why-You-Must-Use-ICMPv6-Router-Advertisements-RAs/ba-p/3416
+Essa técnica é usada para ajudar o administrador a identificar ataques como \textit{man-in-the-middle}, um roteador da rede que não está autorizado e negação de serviço por configuração inválida \cite{ra-icmpv6}.
 
 
 \section{JUSTIFICATIVA}\label{sec:justificativa}
@@ -78,7 +78,7 @@ Descobrir quais atuais equipamentos de uma rede de porte pequeno, possuem suport
 Esta sessão, apresentará uma breve descrição dos capítulos presentes neste trabalho.
 No capítulo 2, serão descritos os fundamentos teóricos, com a finalidade de compreender o tema proposto. Temas como funcionalidades do IPv4, IPv6, segurança, ameaças e vulnerabilidades serão mostrados
 
-No capítulo 3, são apresentados os protocolos de segurança SEND e RA Guard. E abordado a sua funcionalidade e seus componentes.
+No capítulo 3, são apresentados os protocolos de segurança SEND e RA Guard e abordado a sua funcionalidade e seus componentes.
 
 No capítulo 4, apresentam-se as formas de implementações, equipamentos necessários para isso, equipamentos das quais serão testados e definições necessárias para o entendimento acerca do tema abordado neste trabalho.
 

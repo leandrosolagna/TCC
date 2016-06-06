@@ -1,9 +1,39 @@
 \chapter{REVISÃO BIBLIOGRÁFICA}\label{ch:rev-bibs}
 
-\section{O protocolo mais importante em redes de computadores}\label{sec:protIP}
-A internet é uma é uma rede que interconecta milhões de computadores no mundo inteiro. Para que esta comunicação ocorra, cada dispositivo conectado necessita de um endereço único, que o diferencie dos demais. Esta é a função do IP (Internet protocol). O problema é que a cada dia que se passa, mais e mais dispositivos são conectados à internet, e, por conta disto, o número de endereço de IP estão se esgotando. 
+O inicio das redes de computadores aconteceu nos Estados Unidos, onde pesquisadores do DARPA (\textit{Defense Advanced Research Projects Agency}) começaram a experimentar com comunicação entre computadores, onde perceberam o potencial de uma rede de computadores que utilizam pacotes para se comunicarem.
 
-O protocolo de internet, foi definido pelo DoD (Departamento de Defesa Americano), concebido para uso em sistemas de computação interconectados através de comutação de pacotes. As primeiras redes a utilizarem IP foram a ArpaNET (Rede militar de pesquisas, financiada pela ARPA – Advanced Research Projects Agency) e a NSFNet (Rede acadêmica de pesquisa, financiada pela NSF – National Science Foundation). (Refe: http://www.jonny.eng.br/trabip/ip.html).
+Após esses experimentos a ARPANET (\textit{Advanced Research Projects Agency Network}) foi criada tendo como primeiro nó a UCLA e o segundo nó a SRI, onde receberam a primeira mensagem de nó-a-nó \cite{comeco-internet}.
 
-O IP divide cada endereço de inter-rede em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede. Um endereço de IP é um número de 32 bits. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hosts era atribuído o valor de prefixo B; a redes menores era atribuído um valor prefixo de classe C, e às redes maiores era atribuído o prefixo de classe A. (Refe: Livro do joão, usado nas aulas de redes)
+Isso tudo levou a adição de vários outros nós à rede. Infelizmente, os problemas começaram a surgir, ficando claro que seria necessário desenvolver protocolos para maior garantia de comunicação entre todos os nós.
 
+Em razão disso, protocolos como o IPv4 foram desenvolvidos.
+
+Com o esgotamento do número endereços IPv4 mais próximo a cada dia, tecnologias começaram a ser desenvolvidas para o IPv6. Iniciou-se pesquisa para extensões de protocolos, novos protocolos foram criados e tecnologias que utilizam IPv6 tiveram maior foco.
+
+Dentro de várias pesquisas, surgiram duas para segurança em redes que utilizam o IPv6, das quais deram inspirações nesse trabalho. Cujo foco é saber se equipamentos de redes domésticas possuem suporte para protocolos de segurança em rede.
+
+Não é possível falar de IPv6 e suas tecnologias, sem mencionar o seu antecessor.
+
+\section{IPv4}\label{sec:protIPv4}
+
+A primeira versão do protocolo de Internet a ser utilizada globalmente. Trabalha na camada de rede do modelo OSI (\textit{Open System Interconnection model}) e na camada de Internet no modelo TCP (\textit{Transmission Control Protocol})/IP.
+
+Responsável por indentificar hospedeiros onde providencia um endereço único para cada hospedeiro em uma rede.
+
+O cabeçalho deste protocolo contem 14 campos, da qual cada um possui a sua obrigação.
+
+Com suporte a três tipos diferentes de modos de endereçamento, da qual se chamam \textit{unicast}, \textit{broadcast} e \textit{multicast}.
+
+O protocolo divide cada endereço em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede. Um endereço de IP é um número de 32 bits. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hospedeiros era atribuído o valor de prefixo B. As redes menores era atribuído um valor prefixo de classe C, e as redes maiores era atribuído o prefixo de classe A. (Refe: Livro do joão, usado nas aulas de redes)
+
+Apesar disso, existem endereços reservados para uso pessoal.
+
+Toda a classe de IP's possui endereços reservados que podem ser utilizados em uma rede local, por exemplo, em empresas e em casas. Esses endereços podem ser chamados de IPv4 inválidos, pois não são roteaveis na Internet.
+
+Em razão disso foi desenvolvido a tecnologia NAT (\textit{Network Address Translation}), que faz a tradução de um IP inválido para IP válido. Basicamente o NAT  pega o seu endereço inválido e o mascara utilizando o único IP válido que a pessoa possui. Dessa forma, a rede externa acredita que o usuário está utilizando aquele IP válido para acessar páginas \textit{web}.
+
+Para receber um endereço IP, o computador procura um servidor DHCP, se houver um na rede, um endereço é atribuído. Outra alternativa é configurar manualmente um endereço IP para que então o computador possa se comunicar com outros na rede.
+
+A alocação de IPv4 é globalmente gerenciada pela IANA (Internet Assigned Numbers Authority) em coordenação com a ICANN (Internet Corporation for Assigned Names and Numbers). A IANA trabalha junto com os cincos RIRs (Registro Regional da Internet) existentes. Na américa latina o orgão responsável por entrega de endereços IPv4 válidos é a LACNIC (Registro de Endereçamento da Internet para América Latina e Caribe).
+
+\section{IPv6}\label{sec:protIPv6}
