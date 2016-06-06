@@ -24,7 +24,7 @@ O cabeçalho deste protocolo contem 14 campos, da qual cada um possui a sua obri
 
 Com suporte a três tipos diferentes de modos de endereçamento, da qual se chamam \textit{unicast}, \textit{broadcast} e \textit{multicast}.
 
-O protocolo divide cada endereço em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede. Um endereço de IP é um número de 32 bits. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hospedeiros era atribuído o valor de prefixo B. As redes menores era atribuído um valor prefixo de classe C, e as redes maiores era atribuído o prefixo de classe A. (Refe: Livro do joão, usado nas aulas de redes)
+O protocolo divide cada endereço em uma hierarquia de dois níveis, prefixo e sufixo, o prefixo de um endereço identifica a rede a qual o dispositivo se liga, e o sufixo identifica um dispositivo específico na rede. Um endereço de IP é um número de 32 \textit{bits}. No início, o endereço pertencia a uma de cinco classes, em que a classe de um endereço era determinada pelo valor dos quatro primeiros bits, onde a uma rede física que contivesse entre 257 e 65.536 hospedeiros era atribuído o valor de prefixo B. As redes menores era atribuído um valor prefixo de classe C, e as redes maiores era atribuído o prefixo de classe A. (Refe: Livro do joão, usado nas aulas de redes)
 
 Apesar disso, existem endereços reservados para uso pessoal.
 
@@ -34,6 +34,12 @@ Em razão disso foi desenvolvido a tecnologia NAT (\textit{Network Address Trans
 
 Para receber um endereço IP, o computador procura um servidor DHCP, se houver um na rede, um endereço é atribuído. Outra alternativa é configurar manualmente um endereço IP para que então o computador possa se comunicar com outros na rede.
 
-A alocação de IPv4 é globalmente gerenciada pela IANA (Internet Assigned Numbers Authority) em coordenação com a ICANN (Internet Corporation for Assigned Names and Numbers). A IANA trabalha junto com os cincos RIRs (Registro Regional da Internet) existentes. Na américa latina o orgão responsável por entrega de endereços IPv4 válidos é a LACNIC (Registro de Endereçamento da Internet para América Latina e Caribe).
+A alocação de IPv4 é globalmente gerenciada pela IANA (\textit{Internet Assigned Numbers Authority}) em coordenação com a ICANN (\textit{Internet Corporation for Assigned Names and Numbers}). A IANA trabalha junto com os cincos RIRs (Registro Regional da Internet) existentes das quais são orgões que gerenciam a distribuição de IPv4 e IPv6. Na américa latina o orgão responsável por entrega de endereços IPv4 válidos é a LACNIC (Registro de Endereçamento da Internet para América Latina e Caribe).
 
-\section{IPv6}\label{sec:protIPv6}
+Como mencionado anteriormente, os endereços dessa versão estavam próximos de esgotarem e se isso ocorresse, a rede mundial teria vários problemas, mesmo com tecnologias surgindo para evitar que isso ocorra, por exemplo NAT. Por essa razão, pesquisas para desenvolver um novo protocolo começaram a ser realizadas, o que fez que surgisse o IPv6 para evitar o esgotamento de IP's espalhados pelo mundo.
+
+\section{As diferenças entre os protocolos}\label{sec:protIPv6}
+
+A principal diferença entre os dois protocolos é o número de bits que mude de apenas 32 \textit{bits} para 128 \textit{bits}, permitindo assim uma mudança radical na atribuição e gerenciamento de endereços IP \cite{}.
+
+Além da diferença principal, houve uma grande 
